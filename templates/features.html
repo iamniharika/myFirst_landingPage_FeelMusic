@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<style>
+    .feature-icon{
+        font-size: 35px;
+    }
+    #feature1 , #feature2 , #feature3 , #feature4 , #feature5 , #feature6{
+        color: white;
+        width: 15%;
+        display: inline-block;
+        vertical-align: top;
+        /* height: 70vh; */
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 5px solid white;
+        margin: 8%;
+        background-color: black
+    }
+    @media only screen and (max-width: 1200px) {
+        #feature1, #feature2, #feature3, #feature4, #feature5, #feature6 {
+            width: 40%; /* adjust width for medium screens */
+            margin: 3%; /* adjust margin for medium screens */
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #feature1, #feature2, #feature3, #feature4, #feature5, #feature6 {
+            width: 60%; /* adjust width for small screens */
+            margin: 5%; /* adjust margin for small screens */
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        #feature1, #feature2, #feature3, #feature4, #feature5, #feature6 {
+            width: 80%; /* adjust width for very small screens */
+            margin: 10%; /* adjust margin for very small screens */
+        }
+    }
+  
+</style>
+
+<h1 style="margin-top: 3%; text-align: center; color: white;">What do we offer ??</h1>
+
+<section id="features">
+    <section id="feature1">
+        <h3 style="color: lightblue;">Music Video Streaming</h3>
+        <div class="feature-icon">
+            🎵
+        </div>
+        <p style="text-align: left; padding: 5px;"><i><b>You can access millions of songs instantly on your phone, computer, or streaming device by streaming your favorite songs directly from our website. Our music streaming service delivers data to you in small amounts, allowing you to play your favorite tracks seamlessly. </b></i></p>
+    </section>
+
+    <section id="feature2">
+        <h3 style="color: lightblue;">Responsive Design</h3>
+        <div class="feature-icon">
+            📲
+        </div>
+        <p style="text-align: left; padding: 5px;"><i><b>Our responsive design ensures a seamless user experience across all devices, from desktops and laptops to tablets and smartphones. Whether you're on-the-go or cozied up at home, our website adapts to fit your screen size and resolution. Access our content anywhere, anytime, with ease and convenience.</b></i></p>
+    </section>
+
+    <section id="feature3">
+        <h3 style="color: lightblue;">Genres and Moods</h3>
+        <div class="feature-icon">
+            🎧
+        </div>
+        <p style="text-align: left; padding: 5px;"><i><b>Music is a powerful medium that can evoke emotions and enhance our mood. Exploring music by genres or moods can help you discover new sounds and artists that resonate with your vibe. Whether you're in the mood for something upbeat and energetic or relaxing and calming, there's a genre or mood-based playlist out there for you.</b></i></p>
+    </section>
+
+    <section id="feature4">
+        <h3 style="color: lightblue;">Search Functionality </h3>
+        <div class="feature-icon">
+            🔍
+        </div>
+        <p style="text-align: left; padding: 5px;"><i><b>You can easily discover your favorite artists, albums, or tracks by using online music platforms and tools. For instance, you can search for songs, albums, or artists on music streaming services like Spotify, or explore websites like RateYourMusic, which allows you to create personalized music charts and discover new music based on your tastes.</b></i></p>
+    </section>
+
+    <section id="feature5">
+        <h3 style="color: lightblue;">Top Charts </h3>
+        <div class="feature-icon">
+            📅
+        </div>
+        <p style="text-align: left; padding: 5px;"><i><b>To stay updated with top trending songs and albums, you can follow music charts and news websites like Billboard, browse Spotify's discover weekly playlists, and check out up-and-coming artists roundups. You can also find new music by following music bloggers, influencers, and tastemakers on social media.</b></i></p>
+    </section>
+
+    <section id="feature6">
+        <h3 style="color: lightblue;">Artist Profiles </h3>
+        <div class="feature-icon">
+            🧑‍🎤
+        </div>
+        <p style="text-align: left; padding: 5px;"><i><b>To get to know more about your favorite artists, you can explore their inspirations, influences, and creative processes. You can also delve into their discographies, reading reviews, and listening to interviews to gain a deeper understanding of their work.</b></i></p>
+    </section>
+</section>
+
+{% endblock body %}

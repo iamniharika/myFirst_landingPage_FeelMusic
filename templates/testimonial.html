@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+     .testimonial2 , .testimonial3 , .testimonial4 , .testimonial5 , .testimonial6 , .testimonial7{
+        width: 20%;
+        height: 50vh;
+        color: black;
+        background-color: whitesmoke;
+        text-align: center;
+        align-items: center;
+        border-radius: 20%;
+        margin: 5%;
+        display: inline-block;
+    }
+    
+    .testimonial2 img{
+      border-radius: 50%;
+    }
+    .testimonial3 img{
+      border-radius: 50%;
+    }
+    .testimonial4 img{
+      border-radius: 50%;
+    }
+    .testimonial5 img{
+      border-radius: 50%;
+    }
+    .testimonial6 img{
+      border-radius: 50%;
+    }
+    .testimonial7 img{
+      border-radius: 50%;
+    }
+    @media only screen and (max-width: 1200px) {
+        .testimonial2, .testimonial3, .testimonial4, .testimonial5, .testimonial6, .testimonial7 {
+            width: 30%;
+            margin: 3%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .testimonial2, .testimonial3, .testimonial4, .testimonial5, .testimonial6, .testimonial7 {
+            width: 45%;
+            margin: 2%;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .testimonial2, .testimonial3, .testimonial4, .testimonial5, .testimonial6, .testimonial7 {
+            width: 80%;
+            margin: 10%;
+            display: block;
+        }
+    }
+
+</style>
+
+<section class="testimonials">
+    <h2 style="color: white; text-align: center; margin-top: 2%;">What Our Customers Say</h2>
+    
+    <div class="testimonial2">
+      <img src="/static/person2.jfif" alt="Customer 2" >
+      <p>"I was blown away by the quality of the service. I'll be back for more!"</p>
+      <span>- Jane Smith, Satisfied Client</span>
+    </div>
+    <div class="testimonial3">
+      <img src="/static/person3.jfif" alt="Customer 3">
+      <p>"The product exceeded my expectations. I highly recommend it!"</p>
+      <span>- Bob Johnson, Delighted User</span>
+    </div>
+    <div class="testimonial4">
+      <img src="/static/person1.jfif" alt="Customer 4">
+      <p>"The customer service team is incredibly responsive and helpful."</p>
+      <span>- Emily Chen, Happy Customer</span>
+    </div>
+    <div class="testimonial5">
+      <img src="/static/person5.jfif" alt="Customer 5">
+      <p>"I've tried other products, but this one is the best. Hands down."</p>
+      <span>- David Lee, Satisfied Customer</span>
+    </div>
+    <div class="testimonial6">
+      <img src="/static/person6.jfif" alt="Customer 6">
+      <p>"The quality of the product is exceptional. I'm a customer for life!"</p>
+      <span>- Sarah Taylor, Loyal Customer</span>
+    </div>
+    <div class="testimonial7">
+      <img src="/static/person7.jfif" alt="Customer 7">
+      <p>"I was skeptical at first, but the product really delivers. I'm impressed!"</p>
+      <span>- Michael Brown, Impressed User</span>
+    </div>
+  </section>
+
+{% endblock body %}

@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+
+{% block body %}
+ <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+    #genre{
+        width: 80%;
+        margin: 3%;
+        padding: 2%;
+        /* height: 85vh; */
+        color: white;
+        /* border: 2px solid white; */
+        
+    }
+    #hiphop , #jazz , #retro , #Lo-Fi , #phonk , #rap , #sad , #love , #english{
+        width: 14%;
+        text-align: center;
+        color: black;
+        background-color: whitesmoke;
+        padding: 2%;
+        border-radius: 20%;
+        display: inline-block;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    @media (max-width: 767px) {
+  #genre {
+    width: 90%; /* adjust width for mobile screens */
+  }
+  #hiphop, #jazz, #retro, #Lo-Fi, #phonk, #rap, #sad, #love, #english {
+    width: 40%; /* adjust width for mobile screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #genre {
+    width: 80%; /* adjust width for tablet screens */
+  }
+  #hiphop, #jazz, #retro, #Lo-Fi, #phonk, #rap, #sad, #love, #english {
+    width: 30%; /* adjust width for tablet screens */
+  }
+}
+    #hiphop img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #english img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #rap img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #love img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #phonk img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #jazz img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #retro img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #Lo-Fi img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #sad img{
+        border-radius: 50%;
+        height: 80px;
+        width: 90px;
+    }
+    #pay{
+        color: white; 
+        margin: 5%;
+        width: 70%;
+        height: 90vh;
+        /* border: 2px solid white;  */
+        display: inline-block;
+    }
+    @media (max-width: 767px) {
+  #pay {
+    width: 80%; /* adjust width for mobile screens */
+    margin: 10%;
+    /* border: 2px solid white; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #pay {
+    width: 60%; /* adjust width for tablet screens */
+    margin: 8%;
+  }
+}
+    #payhiphop , #payjazz , #payretro , #payrap , #paylove , #payenglish , #paylofi , #paysad , #payphonk{
+        width: 16%;
+        height: 22vh;
+        text-align: center;
+        color: black;
+        background-color: lightcyan;
+        padding: 2%;
+        border-radius: 10px;
+        display: inline-block;
+        overflow: hidden;
+        margin-right: 3%;
+        margin-bottom: 3%;
+    }
+    @media (max-width: 767px) {
+  #payhiphop, #payjazz, #payretro , #payrap , #paylove , #payenglish , #paylofi , #paysad , #payphonk{
+    width: 60%; /* adjust width for mobile screens */
+    /* height: 10vh; */
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #payhiphop, #payjazz, #payretro, #payrap , #paylove , #payenglish , #paylofi , #paysad , #payphonk {
+    width: 45%; /* adjust width for tablet screens */
+    height: 18vh;
+    margin-right: 4%;
+    margin-bottom: 4%;
+  }
+}
+#membership{
+  text-align: center;
+  align-items: center;
+}
+#membership button {
+  font-size: larger;
+  border: 5px solid black;
+  background-color: lightseagreen;
+}
+ </style>
+ <h1 style="color: white; font-size: 60px; text-align: center; margin-top: 20px;"> welcome to FeelMusic !!!!</h1>
+    <section id="genre">
+        <h1 style="margin-bottom: 4%; color: lightblue;">Free Demo Genre Songs</h1>
+        <section id="hiphop">
+            <h3>Hip Hop</h3>
+            <a href="/static/hip hop.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="jazz">
+            <h3>jazz</h3>
+            <a href="/static/jazz.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="retro">
+            <h3>Retro</h3>
+            <a href="/static/retro.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="Lo-Fi">
+            <h3>Lo Fi</h3>
+            <a href="/static/lofi.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="phonk">
+            <h3>Phonk</h3>
+            <a href="/static/phonk.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="rap">
+            <h3>Rap</h3>
+            <a href="/static/Rap.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="sad">
+            <h3>Sad</h3>
+            <a href="/static/sad.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="love">
+            <h3>Love</h3>
+            <a href="/static/love.mp4"><img src="/static/logo.png"></a>
+        </section>
+
+        <section id="english">
+            <h3>English</h3>
+            <a href="/static/englishsong.mp4"><img src="/static/logo.png"></a>
+        </section>
+    </section>
+
+    <section id="pay">
+        <h1 style="color: lightblue;">Get Premium Membership </h1>
+        <ul >
+            <li>Access to exclusive content</li>
+            <li>Ad-free listening experience</li>
+            <li>High-quality audio downloads</li>
+            <li>Priority customer support</li>
+            <li>Discounts on merchandise and events</li>
+            <li>Early access to new releases</li>
+            <li>Personalized recommendations</li>
+        </ul>
+        <section id="payhiphop">
+            <h3>All Hip Hop Songs</h3>
+            <h5>$10</h5>
+        </section>
+        <section id="payjazz">
+            <h3>All Jazz Songs</h3>
+            <h5>$10</h5>
+        </section>
+        <section id="payretro">
+            <h3>All retro Songs</h3>
+            <h5>$10</h5>
+        </section>
+        <section id="paysad">
+          <h3>All Sad Songs</h3>
+          <h5>$10</h5>
+      </section>
+      <section id="payenglish">
+        <h3>All English Songs</h3>
+        <h5>$10</h5>
+    </section>
+    <section id="paylofi">
+      <h3>All LoFi Songs</h3>
+      <h5>$10</h5>
+  </section>
+    <section id="payphonk">
+      <h3>All phonk Songs</h3>
+      <h5>$10</h5>
+    </section>
+    <section id="payrap">
+      <h3>All rap Songs</h3>
+      <h5>$10</h5>
+    </section>
+      <section id="paylove">
+      <h3>All Love Songs</h3>
+    <h5>$10</h5>
+    </section>  
+    <section id="membership">
+      <a href="/templates/contact.html"><button>Be a prime Member with FeelMusic</button></a>
+    <h5 style="color: lightseagreen; font-size: larger;">$50</h5>
+    </section> 
+    
+{% endblock body %}

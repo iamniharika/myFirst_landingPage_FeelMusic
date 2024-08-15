@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+    #contact-info , #map , #cta{
+        color: white;
+        margin: 7%;
+    }
+  
+</style>
+
+  <!-- Contact Information -->
+  <section id="contact-info">
+    <h2>Get in Touch</h2>
+    <p>
+      <strong>Address:</strong> 94647 Labadie Island, New Alvertabury, VA 33320<br>
+      <strong>Phone:</strong> 567-678-667<br>
+      <strong>Email:</strong> <a href="mailto: FeelMusic@example.com">FeelMusic@example.com</a>
+    </p>
+  </section>
+
+<section id="map">
+    <h2>Our Location</h2>
+    <h5>94647 Labadie Island, New Alvertabury, VA 33320</h5>
+  </section>
+  
+
+  <!-- Call-to-Action -->
+  <section id="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Send us a message or give us a call to learn more about our services.</p>
+    <button class="btn btn-primary">Contact Us</button>
+  </section>
+
+{% endblock body %}
+
